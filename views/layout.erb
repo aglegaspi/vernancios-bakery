@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vernancio's Snack Attack!</title>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="/bakerystyles.css">
+    <link rel="stylesheet" href="/welcometext.scss">
+</head>
+<body>
+<!--
+
+<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.jpg" playsinline autoplay muted loop>
+<source src="/beebg/Bee.webm" type="video/webm">
+<source src="/beebg/Bee.webm" type="video/mp4">
+</video>
+-->
+
+
+<!--
+<div id="theloader" class="loading2"></div>
+<div id="thecontent" class="hide">
+-->
+
+    <!--design concept source https://codepen.io/kyunwang/pen/zNOoxb  -->
+    <div id="st-container" class="st-container">
+
+      <nav class="st-menu st-effect-11" id="menu-11">
+        <h2 class="icon icon-lab"><img class="menu-icon" src="/images/menuicons/menu.png" alt="">menu</h2>
+        <ul>
+          <li><a class="icon icon-data" href="/cookies"><img class="menuicons" src="/images/menuicons/cookies.png" alt="">Cookies</a></li>
+          <li><a class="icon icon-location" href="/cakes"><img class="menuicons" src="/images/menuicons/cakes.png" alt="">Cakes</a></li>
+          <li><a class="icon icon-study" href="/muffins"><img class="menuicons" src="/images/menuicons/muffins.png" alt="">Muffins</a></li>
+          <li><a class="icon icon-photo" href="/subscribe"><img class="menuicons" src="/images/menuicons/subscribe.png" alt="">Subscribe</a></li>
+          <li><a class="icon icon-wallet" href="/about"><img class="menuicons" src="/images/menuicons/info.png" alt="">Information</a></li>
+          <li><a class="icon icon-wallet" href="/"><img class="menuicons" src="/images/menuicons/home.png" alt="">Home</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="st-pusher">
+        <!-- 	
+                        example menus 
+                        these menus will be under the push wrapper
+                    -->
+
+        <div class="st-content">
+          <!-- this is the wrapper for the content -->
+     
+          <div class="st-content-inner">
+            <!-- extra div for emulating position:fixed of the menu -->
+            <!-- Top Navigation -->
+            <header class="codrops-header">
+              <h1>Vernancio's Snack Attack <span>A Pop-Up Bakery</span></h1>
+              <button class="btn btn-lg btn-link button-glow" data-effect="st-effect-11">Menu</button>
+            </header>
+            <div class="main clearfix">
+
+               <%= yield %>
+
+              </div>
+            </div>
+            <!-- /main -->
+          </div>
+          <!-- /st-content-inner -->
+        </div>
+        <!-- /st-content -->
+      </div>
+<!--    </div>-->
+        
+<script src="/bakeryscript.js"></script>
+</body>
+</html>
