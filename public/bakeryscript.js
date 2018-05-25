@@ -1,10 +1,12 @@
 
-$(function() { 
-    
-$('.st-menu ul li a').matchactive();
-
+$(function(){
+  $('.st-menu ul li a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('active');
+    }
+  });
 });
-
+    
 
 /* 
 Inspired from: https://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations/

@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
     <!--design concept source https://codepen.io/kyunwang/pen/zNOoxb  -->
     <div id="st-container" class="st-container">
 
@@ -27,35 +26,28 @@
 
       <div class="st-pusher">
         <!-- example menus these menus will be under the push wrapper -->
-
         <div class="st-content">
           <!-- this is the wrapper for the content -->
-     
           <div class="st-content-inner">
             <!-- extra div for emulating position:fixed of the menu -->
             <!-- Top Navigation -->
             <header class="codrops-header">
-              <h1>Vernancio's Snack Attack <span>A Pop-Up Bakery</span></h1>
+              <div class="wraptitle"><h1>Vernancio's Snack Attack</h1>
+              <span>A Friendly Pop-Up Bakery</span></div>
               <button class="btn btn-lg btn-link button-glow" data-effect="st-effect-11">Menu</button>
             </header>
-            <div class="main clearfix">
+             <div class="main clearfix">
 
                <%= yield %>
 
-              </div>
+             </div>
             </div>
-            <!-- /main -->
           </div>
-          <!-- /st-content-inner -->
         </div>
-        <!-- /st-content -->
       </div>
-<!--    </div>-->
-        
-<script src="//code.jquery.com/jquery.min.js"></script>
-2
-<script src="matchactive.plugin.js"></script>
 
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="/bakeryscript.js"></script>
 </body>
 </html>
