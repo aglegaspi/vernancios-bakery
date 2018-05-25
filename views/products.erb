@@ -1,0 +1,12 @@
+<div class="itemcontainer">
+  
+    <% @products.each do |product| %>
+        <div class="items">
+        <img class="itemimg" src="<%= product.src %>">
+        <div class="item_name"><%= product.name %></div>
+        <div class="item_desc"><%= product.desc %></div>
+        <div class="item_price">Price: $<%= product.price %></div>
+        </div>
+     <% end %>
+
+</div>

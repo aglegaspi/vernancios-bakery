@@ -11,20 +11,20 @@ end
 
 
 get '/cookies' do
-    
-    erb :cookies
+    @products = MyCookie.all
+    erb :products
 end
-
+    
 
 get '/cakes' do
-    
-    erb :cakes
+    @products = Cake.all
+    erb :products
 end
 
 
 get '/muffins' do
-    
-    erb :muffins
+    @products = Muffin.all
+    erb :products
 end
 
 get '/subscribe' do
@@ -38,15 +38,20 @@ post ('/subscribed') do
     mg_client = Mailgun::Client.new(ENV['MAILGUN_API_KEY'])
     
     message_params =  { 
-    from: 'giorgioalxndr@gmail.com',
+    from: 'lex83nyc@gmail.com',
     to:   @email,
-    subject: 'Added a To-Do',
-    html: erb(:email,layout:false)    
+    subject: 'Thank you from Vernancio\'s Bakery!',
+    html: erb(:sub_email,layout:false)    
     }
 
     mg_client.send_message(ENV['MAILGUN_API_DOMAIN'], message_params)
 
-    redirect('/')
+    redirect('/thankyou')
+end
+
+get '/thankyou' do
+    
+    erb :thankyou
 end
 
 
