@@ -36,7 +36,6 @@ post ('/subscribed') do
     @email = params[:email]
     
     mg_client = Mailgun::Client.new(ENV['MAILGUN_API_KEY'])
-    
     message_params =  { 
     from: 'lex83nyc@gmail.com',
     to:   @email,

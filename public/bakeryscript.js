@@ -1,12 +1,9 @@
 
-//setTimeout(function(){
-//    let loader = document.getElementById('theloader');
-//    let content = document.getElementById('thecontent');
-//    
-//    content.style.display = "block";
-//    loader.style.display = "none";
-//    
-//},3000) 
+$(function() { 
+    
+$('.st-menu ul li a').matchactive();
+
+});
 
 
 /* 
@@ -147,3 +144,4 @@ var Messenger = function(el){
 
 console.clear();
 var messenger = new Messenger($('#messenger'));
+    
