@@ -1,4 +1,3 @@
-
 $(function(){
   $('.st-menu ul li a').each(function() {
     if ($(this).prop('href') == window.location.href) {
@@ -10,10 +9,6 @@ $(function(){
 
 /* 
 Inspired from: https://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations/
-
-there are still some quirks for animation 3, 6, 7, 8 & 14 
-as they do not animate back gracefully  
-(those are the navs in the div with class st-pusher)
 */
 
 var click = document.querySelectorAll('div button');
@@ -146,4 +141,3 @@ var Messenger = function(el){
 
 console.clear();
 var messenger = new Messenger($('#messenger'));
-    
